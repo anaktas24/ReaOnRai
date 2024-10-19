@@ -1,0 +1,62 @@
+List of Components
+
+	1.	Navbar
+	•	Navigation menu for the application.
+	2.	Footer
+	•	Bottom section of the page with copyright and links.
+	3.	Button
+	•	Reusable button with customizable properties.
+	4.	Modal
+	•	Overlay dialog for messages or forms.
+	5.	Card
+	•	Display of related information in a visually appealing format.
+	6.	Form
+	•	Reusable form structure for user input.
+	7.	Input
+	•	Custom input fields with validation.
+	8.	Loading Spinner
+	•	Visual indicator of loading states.
+	9.	Notification / Alert
+	•	Message or alert to inform users of actions.
+	10.	Breadcrumbs
+	•	Navigation aid to show user location in the hierarchy.
+	11.	Sidebar
+	•	Vertical navigation or information panel.
+	12.	Image Gallery
+	•	Display of images in a grid or carousel format.
+	13.	Tabs
+	•	Navigation for switching between different content sections.
+	14.	Table
+	•	For displaying data in rows and columns.
+	15.	Pagination
+	•	Component for navigating through paginated content.
+	16.	Accordion
+	•	Expandable sections for displaying content.
+	17.	Checkbox Group
+	•	Group of checkboxes for multiple selections.
+	18.	Radio Button Group
+	•	Group of radio buttons for single selections.
+	19.	Select Dropdown
+	•	Dropdown for selecting options.
+	20.	Range Slider
+	•	Input for selecting a value from a range.
+	21.	Search Bar
+	•	Input field for searching content.
+	22.	Avatar
+	•	Display of user profile pictures.
+	23.	Progress Bar
+	•	Indicator for progress on tasks.
+	24.	Tooltip
+	•	Small pop-up for additional information on hover.
+	25.	Date Picker
+	•	Input for selecting dates.
+	26.	Time Picker
+	•	Input for selecting time.
+	27.	Calendar
+	•	Component for displaying a calendar view.
+	28.	Quote
+	•	Display of quotes or testimonials.
+	29.	Social Media Links
+	•	Links or icons for social media profiles.
+	30.	Feature List
+	•	List of features or benefits.
