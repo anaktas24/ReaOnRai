@@ -1,19 +1,29 @@
 // src/components/Navbar.tsx
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { faHome, faBook, faGavel, faUsers, faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Navbar.css'
 
 const Navbar: React.FC = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-            <Link to="/about">About</Link>
-        </li>
-      </ul>
-    </nav>
+    <div className="navbar">
+        <a href="#home" className="nav-item">
+            <FontAwesomeIcon icon={faHome} className="icon" />
+            
+        </a>
+        <a href="#resources" className="nav-item">
+            <FontAwesomeIcon icon={faBook} className="icon" />
+        </a>
+        <a href="#legal" className="nav-item">
+            <FontAwesomeIcon icon={faGavel} className="icon" />
+        </a>
+        <a href="#community" className="nav-item">
+            <FontAwesomeIcon icon={faUsers} className="icon" />
+        </a>
+        <a href="#profile" className="nav-item">
+            <FontAwesomeIcon icon={faUser} className="icon" />
+        </a>
+    </div>
   );
 };
 

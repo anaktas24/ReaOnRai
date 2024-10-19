@@ -1,0 +1,21 @@
+/* src/components/Banner.css */
+.banner {
+  background-color: #007bff; /* You can change this to your preferred color */
+  color: white;
+  text-align: center;
+  padding: 40px 20px; /* Adjust padding as needed */
+  margin-bottom: 20px; /* Space between the banner and other elements */
+  position: relative; /* Ensures it can overlap other content */
+  width: 100%; /* Make sure the banner covers full width */
+  box-sizing: border-box; /* Include padding in the total width/height */
+}
+
+.banner h2 {
+  margin: 0;
+  font-size: 28px; /* Increase font size if needed */
+}
+
+.banner p {
+  margin: 5px 0 0;
+  font-size: 18px; /* Adjust font size as needed */
+}

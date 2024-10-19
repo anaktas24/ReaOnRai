@@ -1,0 +1,75 @@
+.home-page {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    margin-bottom: 40px;
+  }
+  
+  .main-content section {
+    margin-bottom: 30px;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .service-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 30%;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .social-media {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline;
+    margin-right: 10px;
+  }
