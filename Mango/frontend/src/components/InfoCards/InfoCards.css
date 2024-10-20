@@ -1,0 +1,62 @@
+.card {
+  background-color: #5c5c5c; /* White background */
+  border-radius: 1.25rem; /* Slightly rounded corners */
+  box-shadow: 0 4px 15px rgb(255, 0, 0); /* Soft shadow for depth */
+  padding: 20px; /* Padding for spacing inside the card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling and shadow transition */
+  margin: 20px; /* Spacing between cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly scale the card on hover */
+  box-shadow: 0 8px 20px rgba(240, 8, 8, 0.878); /* Deeper shadow on hover */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Larger title */
+  font-weight: bold; /* Bold title */
+  margin-bottom: 10px; /* Spacing below title */
+}
+
+.card-description {
+  font-size: 1rem; /* Standard description size */
+  color: #ffffff; /* Gray color for description */
+  margin-bottom: 15px; /* Spacing below description */
+}
+
+.card-status {
+  font-size: 0.875rem; /* Smaller status text */
+  padding: 5px 10px; /* Padding for status badge */
+  border-radius: 5px; /* Rounded corners for status badge */
+  color: #fff; /* White text */
+}
+
+.card-status.pending {
+  background-color: #f0ad4e; /* Yellow for Pending */
+}
+
+.card-status.in-progress {
+  background-color: #5bc0de; /* Blue for In Progress */
+}
+
+.card-status.completed {
+  background-color: #5cb85c; /* Green for Completed */
+}
+
+.card-action-button {
+  background-color: #007bff; /* Button color */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.card-action-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
