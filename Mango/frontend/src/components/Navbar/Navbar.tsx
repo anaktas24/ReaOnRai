@@ -1,12 +1,40 @@
 // src/components/Navbar.tsx
-import React from 'react';
+import React, { useState } from 'react'
+import { Link, /*useLocation*/ useNavigate } from 'react-router-dom'
 import { faHome, faBook, faGavel, faUsers, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Navbar.css'
 
-const Navbar: React.FC = () => {
-  return (
-    <div className="navbar">
+type NavigationProps = { 
+    content?: JSX.Element
+}
+
+const Navigationbar = (props: NavigationProps) =>{
+  const [redirectToHome, setRedirectHome] = useState<boolean>(false)
+  //const location = useLocation()
+  const navigate = useNavigate()
+  
+  const redirectHome = () => {
+      
+      setRedirectHome(true)
+    }
+    if (redirectToHome) {
+        setRedirectHome(false);
+        navigate("/home");
+      }
+    
+        return (
+            <div className="navbar">
+              <div className="sidebar">
+                <Link
+                to={'/home'}
+                onClick={(e) => {
+                    e.preventDefault()
+                    redirectHome()
+                }}
+                />
+                <div className={`innercontainer-content ${location.pathname === '/einstellungen' && "settings"}`}>{props.content}</div>
+
         <a href="#home" className="nav-item">
             <FontAwesomeIcon icon={faHome} className="icon" />
             
@@ -23,8 +51,10 @@ const Navbar: React.FC = () => {
         <a href="#profile" className="nav-item">
             <FontAwesomeIcon icon={faUser} className="icon" />
         </a>
+        </div>
     </div>
   );
+  
 };
 
-export default Navbar;
+export default Navigationbar;
