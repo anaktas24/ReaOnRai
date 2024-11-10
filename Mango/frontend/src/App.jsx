@@ -4,6 +4,7 @@ import About from './pages/About'
 import Item from './pages/Item'
 import Contact from "./pages/Contact"
 import Login from "./pages/Login"
+import Profile from "./pages/Profile"
 import NavBar from "./components/Navbar"
 import Footer from "./components/Footer"
 import SearchBar from "./components/SearchBar"
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/item/:itemId" element={<Item/>}/>
+        <Route path="/profile" element={<Profile/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/login" element={<Login/>}/>
       </Routes>

@@ -19,7 +19,7 @@ const NavBar = () => {
                 <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
             </NavLink>
             <NavLink to="/collection" className='flex flex-col items-center gap-1'>
-                <p>COLLECTION</p>
+                <p>CATEGORIES</p>
                 <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
             </NavLink>
             <NavLink to="/about" className='flex flex-col items-center gap-1'>
@@ -36,19 +36,14 @@ const NavBar = () => {
             <img onClick={()=>setShowSearch(true)} src={assets.search_icon} className='w-5 cursor-pointer' alt="" />
 
             <div className='group relative'>
-                <Link to='/login'><img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" /></Link>
+                <Link to='/profile'><img src={assets.profile_icon} className='w-5 cursor-pointer' alt="" /></Link>
                 <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
                     <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-white text-gray-500 rounded">
                         <p className="cursor-pointer hover:text-black">My Profile</p>
-                        <p className="cursor-pointer hover:text-black">Orders</p>
                         <p className="cursor-pointer hover:text-black">Logout</p>
                     </div>
                 </div>
             </div>
-            <Link to='/cart' className='relative'>
-                <img src={assets.cart_icon} className='w-5 cursor-pointer' alt="" />
-                <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>{}</p>
-            </Link>
             <img  onClick={()=>isVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="" />
         </div>
 
@@ -60,7 +55,7 @@ const NavBar = () => {
                     <p>Back</p>
                 </div>
                 <NavLink onClick={()=>isVisible(false)} className='py-2 pl-6 border'to='/'>HOME</NavLink>
-                <NavLink onClick={()=>isVisible(false)} className='py-2 pl-6 border'to='/collection'>COLLECTION</NavLink>
+                <NavLink onClick={()=>isVisible(false)} className='py-2 pl-6 border'to='/collection'>CATEGORIES</NavLink>
                 <NavLink onClick={()=>isVisible(false)} className='py-2 pl-6 border'to='/about'>ABOUT</NavLink>
                 <NavLink onClick={()=>isVisible(false)} className='py-2 pl-6 border'to='/contact'>CONTACT</NavLink>
             </div>
