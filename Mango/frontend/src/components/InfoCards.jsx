@@ -1,13 +1,8 @@
 import React from 'react';
 import './InfoCards.css'
 
-type CardProps = {
-  title: string;
-  description: string;
-  status: 'Pending' | 'In Progress' | 'Completed';
-};
 
-const Card: React.FC<CardProps> = ({ title, description, status }) => {
+const Card =()=>{
   return (
     <div className="card">
       <h3 className="card-title">{title}</h3>
