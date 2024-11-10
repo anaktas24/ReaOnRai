@@ -24,7 +24,7 @@ const Navigationbar = (props: NavigationProps) =>{
       }
     
         return (
-            <div className="navbar">
+            <div className="navigation">
               <div className="sidebar">
                 <Link
                 to={'/home'}
