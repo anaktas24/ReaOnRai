@@ -1,4 +1,4 @@
-import Hero from '../components/Home'
+import Hero from '../components/World'
 import NewsLetterBox from '../components/NewsLetterBox'
 
 const Home = () => {
