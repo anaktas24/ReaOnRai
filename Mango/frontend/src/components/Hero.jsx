@@ -12,6 +12,7 @@ const Hero = () => {
                 <div className="flex items-center gap-2">
                     <p className="font-semibold text-sm md:text-base">FOR A BETTER LIFE</p>
                     <p className="w-8 md:w-11 h-[1px] bg-[#414141]"></p>
+                    <button>Start your Journey</button>
                 </div>
             </div>
        </div>
